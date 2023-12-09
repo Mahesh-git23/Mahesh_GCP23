@@ -1,5 +1,9 @@
 config {
-  type: "table",
-  description: "Description of the first table.",
+    type: "table",
+    description: "Description of the first table.",
 }
-SELECT SUM(number) FROM ${ref("source_table")} TOTAL
+
+SELECT
+  SUM(number)
+FROM
+  ${ref("source_table")}
